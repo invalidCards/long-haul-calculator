@@ -17,7 +17,7 @@
     "security:audit": "npm audit --omit=dev"
   },
   "dependencies": {
-    "@iconify-icons/mdi": "^1.2.48",
+    "@iconify-icons/mdi": "^2.0.0",
     "@iconify/react": "^6.0.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
