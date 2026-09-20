@@ -1,0 +1,37 @@
+name: Refresh trainkms graph
+
+on:
+  schedule:
+    - cron: '17 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: git submodule update --remote vendor/trainkms
+      - run: npm ci
+      - run: npm run data:trainkms
+      - run: npm run check
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/update-trainkms
+          delete-branch: true
+          commit-message: 'chore: refresh trainkms graph'
+          title: 'chore: refresh trainkms graph'
+          body: 'Updates the pinned trainkms submodule and regenerated minimal station graph. Review before merging; only merged changes deploy.'
+          add-paths: |
+            .gitmodules
+            vendor/trainkms
+            src/data/trainkms-snapshot.json

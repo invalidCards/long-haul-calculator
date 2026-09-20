@@ -1,0 +1,64 @@
+.long-haul { width: min(100%, 1160px); min-height: 100vh; margin: 0 auto; padding: clamp(1.25rem, 4vw, 3rem); }
+.long-haul-header { max-width: 52rem; margin: 1rem 0 2rem; }
+.long-haul-title { display: flex; align-items: center; gap: 1rem; margin: 1.7rem 0 .65rem; }
+.long-haul-title h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 4.2rem); letter-spacing: -.05em; }
+.long-haul-header > p { color: #b8c0e2; line-height: 1.6; }
+.long-haul-mark { display: grid; width: 3.5rem; height: 3.5rem; place-items: center; border: 1px solid #f2cf45; border-radius: .85rem; color: #003b79; background: linear-gradient(145deg, #ffe56d, #e8b82e); box-shadow: 0 .5rem 1.4rem rgb(213 161 22 / .32); font-size: 1.9rem; }
+.backup-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; margin-top: 1rem; color: #b8c0e2; font-size: .85rem; }
+.backup-controls span { flex-basis: 100%; }
+.backup-controls button { display: inline-flex; align-items: center; gap: .4rem; }
+.long-haul-scoreboard { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 1.25rem; overflow: hidden; border: 1px solid #41687a; border-radius: .9rem; background: linear-gradient(125deg, #193947, #1c2743); }
+.long-haul-scoreboard > div { display: grid; gap: .2rem; min-height: 7.5rem; align-content: center; padding: 1.1rem 1.35rem; border-right: 1px solid #41687a; }
+.long-haul-scoreboard > div:last-child { border: 0; }
+.long-haul-scoreboard span, .long-haul-scoreboard small { color: #c1d5e8; }
+.long-haul-scoreboard span { font-size: .76rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.long-haul-scoreboard strong { font-size: clamp(1.4rem, 3vw, 2rem); }
+.long-haul-controls, .long-haul-entry, .long-haul-timeline { border: 1px solid #3f4773; border-radius: .8rem; background: #191d35; }
+.long-haul-controls { margin-bottom: 1.25rem; padding: 1.25rem; }
+.long-haul .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+.long-haul .section-heading h2 { margin: 0; font-size: 1.25rem; }
+.long-haul .section-heading > svg { color: #86d2d6; font-size: 1.5rem; }
+.list-picker { display: flex; align-items: center; gap: .6rem; }
+.list-picker select { width: auto; margin: 0; }
+.station-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: .65rem; }
+.station-list-item { position: relative; display: grid; gap: .18rem; padding: .75rem; border: 1px solid #41486f; border-radius: .55rem; background: #12162b; }
+.station-list-item span, .station-list-item small { color: #9faace; font-size: .72rem; }
+.station-list-item strong { padding-right: 1.5rem; font-size: .88rem; }
+.station-list-item--sprinter { border-color: #396c92; background: #172a41; }
+.station-list-item--sprinter span, .station-list-item--sprinter small { color: #86b5d6; }
+.station-list-item--intercity { border-color: #877535; background: #312d1b; }
+.station-list-item--intercity span, .station-list-item--intercity small { color: #d6c57d; }
+.station-list-item--sprinter.is-reached { border-color: #72c8ff; background: #155077; }
+.station-list-item--intercity.is-reached { border-color: #f0ce59; background: #6c5518; }
+.station-backup-button { position: absolute; top: .35rem; right: .35rem; padding: .18rem .4rem; }
+.long-haul-workspace { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
+.long-haul-entry { padding: 1.25rem; }
+.entry-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; margin-bottom: 1rem; }
+.entry-grid label small { color: #a2abca; font-weight: 500; }
+.entry-wide { grid-column: 1 / -1; }
+.long-haul-entry .primary-button { width: 100%; }
+.challenge-picker { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: .5rem; }
+.challenge-help-button { width: 2.25rem; height: 2.25rem; padding: 0; border-radius: 50%; font-weight: 800; }
+.long-haul-timeline { padding: 1.25rem; }
+.long-haul-timeline ol { display: grid; gap: .7rem; margin: 0; padding: 0; list-style: none; }
+.timeline-item { display: grid; grid-template-columns: 4rem 1fr auto; gap: .75rem; align-items: start; padding: .8rem; border-left: 3px solid #7485ff; border-radius: .45rem; background: #12162a; }
+.timeline-item--route { border-color: #75cfd3; }
+.timeline-item--challenge { border-color: #e1bc65; }
+.timeline-item--adjustment { border-color: #bda4ff; }
+.timeline-item time { padding-top: .1rem; color: #aeb8dc; font-variant-numeric: tabular-nums; font-weight: 800; }
+.timeline-time-editor { display: grid; gap: .3rem; }
+.timeline-time-editor input { min-width: 0; margin: 0; padding: .3rem; }
+.timeline-time-editor button { padding: .25rem .45rem; color: #cbd5f8; font-size: .72rem; background: #292e4d; }
+.timeline-meta, .timeline-body p { color: #bfc7e5; font-size: .86rem; }
+.timeline-body p { margin: .25rem 0 0; }
+.negative-points { color: #ffb5c0 !important; }
+.timeline-actions { display: flex; gap: .2rem; }
+.timeline-edit, .timeline-remove { width: 2rem; height: 2rem; padding: 0; color: #bbc4eb; background: transparent; }
+.timeline-remove { font-size: 1.45rem; line-height: 1; }
+.empty-timeline { margin: 0; padding: 1.5rem; color: #aeb8d7; text-align: center; border: 1px dashed #49517c; border-radius: .5rem; }
+.score-detail { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #3c446d; color: #b7c1e4; font-size: .86rem; }
+.score-detail strong { margin-left: auto; color: #e4f5ff; }
+.source-note { margin: 1.2rem 0; color: #aeb8dc; font-size: .78rem; }
+.source-note code { color: #cbd6ff; }
+@media (max-width: 850px) { .long-haul-workspace { grid-template-columns: 1fr; } .station-list { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 580px) { .long-haul-scoreboard { grid-template-columns: 1fr; } .long-haul-scoreboard > div { min-height: auto; border-right: 0; border-bottom: 1px solid #41687a; } .station-list { grid-template-columns: repeat(2, 1fr); } .entry-grid { grid-template-columns: 1fr; } .entry-wide { grid-column: auto; } .long-haul .section-heading { align-items: flex-start; } .list-picker { display: grid; } .score-detail strong { width: 100%; margin-left: 0; } .timeline-item { grid-template-columns: 3.25rem 1fr auto; gap: .45rem; } }

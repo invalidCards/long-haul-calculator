@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-08",
+  "name": "The Long Haul",
+  "editionLabel": "Edition 2026-08",
+  "officialLabel": "Official calculator",
+  "intro": "Log each stop-to-stop journey, challenge, and adjustment. Travel is calculated from the trainkms station graph in hectometres.",
+  "startingStation": "Utrecht Centraal",
+  "stationClaimMultiplier": 0.25
+}

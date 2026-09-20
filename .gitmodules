@@ -1,0 +1,4 @@
+[submodule "vendor/trainkms"]
+	path = vendor/trainkms
+	url = https://github.com/nanderv/trainkms.git
+	branch = main

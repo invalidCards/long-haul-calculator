@@ -1,0 +1,9 @@
+# Third-party data notice
+
+The generated rail graph in `src/data/trainkms-snapshot.json` is derived from
+[`nanderv/trainkms`](https://github.com/nanderv/trainkms). It is included and
+updated with the source author's confirmed permission. The snapshot records
+the exact upstream commit used for each release.
+
+The MIT licence in this repository applies to this calculator's code. It does
+not replace any rights or conditions applying to third-party data.
